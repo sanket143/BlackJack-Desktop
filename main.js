@@ -35,8 +35,8 @@ class HelloGNOME {
         this._window = new Gtk.ApplicationWindow  ({
             application: this.application,
             title: "BlackJack",
-            default_height: 200,
-            default_width: 400,
+            default_height: 650,
+            default_width: 950,
             window_position: Gtk.WindowPosition.CENTER });
 
         // Create a webview to show the web app
