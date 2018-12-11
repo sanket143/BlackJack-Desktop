@@ -230,6 +230,8 @@ function reset(){
   addDealer();
   addPlayer();
   addPlayer();
+
+  showMessage("");
 }
 
 $(document).ready(function(){
