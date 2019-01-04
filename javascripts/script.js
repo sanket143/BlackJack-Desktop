@@ -69,7 +69,9 @@ function dealerScore(){
   var scores = [0];
   for(i = 0; i < dealersHand.length; i++){
     temp = parseInt(dealersHand[i].value);
-    if(temp == NaN){
+    console.log(temp);
+    if(isNaN(temp)){
+      console.log("Insied NAN");
       if(dealersHand[i].value == "A"){
         temp = 0;
         for(j = 0; j < scores.length; j++){
@@ -105,7 +107,7 @@ function playerScore(){
   var scores = [0];
   for(i = 0; i < playersHand.length; i++){
     temp = parseInt(playersHand[i].value);
-    if((temp > 0) == false){
+    if(isNaN(temp)){
       console.log("Inside")
       if(playersHand[i].value == "A"){
         temp = 0;
@@ -114,6 +116,7 @@ function playerScore(){
           scores.push(scores[j] + 10);
         }
       } else {
+        temp = 10;
         for(j = 0; j < scores.length; j++){
           scores[j] += temp;
         }
